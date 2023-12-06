@@ -1,17 +1,14 @@
 import React from 'react'
 
+const Pun = ({ pun }) => {
 
-const Pun = ({pun}) => {
-  
-  
-  
-  return (
-      <>
-        <p>Pun</p>
-        {pun.pun}
-      </>
-  
-  ) 
+    return (
+        <>
+            <p>Pun</p>
+            {pun.pun}
+        </>
+
+    )
 }
 
 export default Pun;

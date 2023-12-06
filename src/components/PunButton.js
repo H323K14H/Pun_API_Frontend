@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PunButton = () => {
-  return (
-    <div>PunButton</div>
-  )
+const PunButton = ({ onButtonClick }) => {
+    return (
+        <button onClick={onButtonClick}>🙉🙈🙊</button>
+    )
 }
 
 export default PunButton;
