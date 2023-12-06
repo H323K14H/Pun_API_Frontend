@@ -4,8 +4,9 @@ const Pun = ({ pun }) => {
 
     return (
         <>
-            <p>Pun</p>
-            {pun.pun}
+            <section className='pun'>
+                <b>{pun.pun}</b>
+            </section>
         </>
 
     )

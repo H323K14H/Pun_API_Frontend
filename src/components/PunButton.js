@@ -2,7 +2,7 @@ import React from 'react'
 
 const PunButton = ({ onButtonClick }) => {
     return (
-        <button onClick={onButtonClick}>🙉🙈🙊</button>
+        <button className="main-btn" onClick={onButtonClick}>🙉🙈🙊</button>
     )
 }
 

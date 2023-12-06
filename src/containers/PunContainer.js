@@ -19,13 +19,13 @@ const PunContainer = () => {
     }, [])
 
     return (
-        <>
+        <body>
             <h1>Random Pun</h1>
             {pun ? <Pun pun={pun} /> : <p>😩Life changing pun coming up😩...</p>}
             <br />
             <br />
             <PunButton onButtonClick={getRandomPun} />
-        </>
+        </body>
     )
 }
 
