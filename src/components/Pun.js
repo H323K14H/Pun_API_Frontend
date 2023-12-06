@@ -1,9 +1,17 @@
 import React from 'react'
 
-const Pun = () => {
+
+const Pun = ({pun}) => {
+  
+  
+  
   return (
-    <div>Pun</div>
-  )
+      <>
+        <p>Pun</p>
+        {pun.pun}
+      </>
+  
+  ) 
 }
 
 export default Pun;
