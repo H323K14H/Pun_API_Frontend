@@ -1,8 +1,17 @@
 import React from 'react'
+import { Link, Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <nav>
+          <ul>
+              <li><Link to="/random-pun">Random Puns </Link> </li>
+          </ul>
+      </nav>
+      <Outlet />
+
+    </>
   )
 }
 
