@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,8 +40,7 @@
 
 body {
   background-color: rgb(239, 127, 127);
-  /* background-image: url(
-    "https://t3.ftcdn.net/jpg/05/19/88/90/360_F_519889094_wqCcbKUJkuMRPzR0CyBNPuyxM2uiZODC.jpg"); */
+  background-image: url("https://t3.ftcdn.net/jpg/05/19/88/90/360_F_519889094_wqCcbKUJkuMRPzR0CyBNPuyxM2uiZODC.jpg");
   /* background-repeat: no-repeat; */
   background-size: auto;
   font-size: xx-large;
@@ -49,7 +49,7 @@ body {
 
 .main-btn {
   font-size: xx-large;
-  background-color: white; /* Green */
+  background-color: white;
   border: none;
   color: white;
   cursor: pointer;
@@ -59,10 +59,12 @@ body {
   display: inline-block;
   border-radius: 25px;
   box-shadow: 0 9px #999;
-  
+
 }
 
-.main-btn:hover {background-color: #e0dfdf}
+.main-btn:hover {
+  background-color: #e0dfdf
+}
 
 .main-btn:active {
   background-color: #e0dfdf;
@@ -81,7 +83,7 @@ body {
   box-shadow: 0 9px #999;
 }
 
-h1{
+h1 {
   color: black;
   background-color: white;
   padding: 15px 32px 15px 15px;
