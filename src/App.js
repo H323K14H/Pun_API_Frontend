@@ -7,6 +7,7 @@ import PunContainer from './containers/PunContainer';
 import { useState } from 'react';
 import FanList from './components/FanList';
 import PunButton from './components/PunButton';
+import Welcome from './components/Welcome';
 
 function App({getRandomPun}) {
 
@@ -41,8 +42,17 @@ function App({getRandomPun}) {
     [
       {
         path: "/",
-        element: <Home />,
+        element: <>
+                <Home />
+                
+                </>,
         children: [
+          {
+            path: "/",
+            element: <Welcome />
+            
+
+          },
           {
             path: "/",
             element: <PunContainer setPun={setPun} />,
