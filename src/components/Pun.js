@@ -8,7 +8,9 @@ const Pun = ({ pun, onButtonClick }) => {
             <p className='pun'>
                 <b>{pun.pun}</b>
             </p>
-           
+           <div>
+                <button className="main-btn" onClick={onButtonClick}>🙉🙈🙊</button>
+           </div>
         </>
 
     )

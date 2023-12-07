@@ -28,9 +28,9 @@ const PunContainer = ({ setPun }) => {
             <h1>Have som Pun with us!!!
                 <p className="pun-intended">(pun intended)</p>
             </h1>
-            {/* CSS for spacing. Bottom marigin */}
-            <PunButton onButtonClick={getRandomPun} />
-            {/* <FanList fans = {fans}/> */}
+            {/* <PunButton onButtonClick={getRandomPun} /> */}
+          
+        
             <Outlet />
         </body>
 

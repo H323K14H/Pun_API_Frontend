@@ -6,8 +6,9 @@ import PunForm from './components/PunForm';
 import PunContainer from './containers/PunContainer';
 import { useState } from 'react';
 import FanList from './components/FanList';
+import PunButton from './components/PunButton';
 
-function App() {
+function App({getRandomPun}) {
 
   const [pun, setPun] = useState([]);
   const [punFans, setPunFans] = useState(
@@ -32,6 +33,10 @@ function App() {
     setPunFans(updatedFans);
   }
 
+  
+
+    
+
   const punRoutes = createBrowserRouter(
     [
       {
@@ -44,7 +49,10 @@ function App() {
             children: [
               {
                 path: "/random-pun",
-                element: <Pun pun={pun} />
+                element: <>
+                  <Pun  pun={pun} onButtonClick={getRandomPun} />
+                  {/* <PunButton   /> */}
+                </>
               },
               {
                 path: "/comment-section",
