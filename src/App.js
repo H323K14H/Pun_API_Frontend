@@ -7,6 +7,7 @@ import PunContainer from './containers/PunContainer';
 import { useEffect, useState } from 'react';
 import FanList from './components/FanList';
 import Welcome from './components/Welcome';
+import Bin from './components/Bin';
 
 function App() {
 
@@ -14,17 +15,23 @@ function App() {
   const [punFans, setPunFans] = useState(
     [
       {
-        name: "Robert",
-        email: "Rob.puns@aol.com",
-        comment: "I was on the edge.... But once I pressed that button, my life changed forever",
-        id: 0
+        name: "Bill Gates",
+        email: "bill.gates@gatesfoundation.org",
+        comment: "This is the best app I have ever seen!!!, whoever these developers are, they are absolute tech wizards!!!",
+        id: 1
       },
       {
         name: "Ashley",
         email: "Ash.404@yahoo.com",
         comment: "The kids and I love generating a pun to get us started for the day!",
-        id: 0
-      }
+        id: 2
+      },
+      {
+        name: "Robert",
+        email: "Rob.puns@aol.com",
+        comment: "I was on the edge.... But once I pressed that button, my life changed forever!!!",
+        id: 3
+      },
     ]
   );
 
@@ -58,6 +65,7 @@ function App() {
             path: "/",
             element: <Welcome />
           },
+        
           {
             path: "/",
             element: <PunContainer setPun={setPun} />,
@@ -75,9 +83,16 @@ function App() {
                   <FanList punFans={punFans} />
                 </>
               }
+              
             ]
           }
         ]
+      },
+      {
+        
+          path: "/get-in-the-bin",
+          element: <Bin />
+        
       }
     ]
   );

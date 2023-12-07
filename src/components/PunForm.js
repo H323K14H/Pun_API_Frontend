@@ -40,7 +40,8 @@ const PunForm = ({ onNewFanSubmission }) => {
 
     return (
         <section className="pun-form">
-            <h2>Post new comment:</h2>
+            <p>Get exclusive puns sent to you daily!!!</p>
+            <h2>🎸 Join us: 🎸</h2>
             <form onSubmit={(event) => handleFormSubmit(event)}>
                 <label htmlFor="name-input">Name:</label>
                 <input
@@ -63,7 +64,7 @@ const PunForm = ({ onNewFanSubmission }) => {
                     onInput={(event) => updateFanComment(event)}
                     value={comment}
                 />
-                <input className="submit" type="submit" value="🎸🎸🎸" />
+                <input className="submit" type="submit" value="🎸JOIN🎸" />
             </form>
         </section>
     )

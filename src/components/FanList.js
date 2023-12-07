@@ -8,7 +8,7 @@ const FanList = ({ punFans }) => {
 
     return (
         <section>
-            <h2>All fans</h2>
+            <h2 className="pun-fanatics">Fellow Pun Fanatics:</h2>
             {fanComponents}
         </section>
     );

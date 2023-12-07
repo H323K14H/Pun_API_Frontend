@@ -48,6 +48,7 @@ body {
 }
 
 .main-btn {
+  display: flex;
   font-size: xx-large;
   background-color: white;
   border: none;
@@ -73,6 +74,7 @@ body {
 }
 
 .pun {
+  display: flex;
   color: black;
   background-color: white;
   padding: 100px 100px;
@@ -95,7 +97,7 @@ h1 {
 }
 
 .pun-intended {
-  font-size: xx-small;
+  font-size: small;
 }
 
 .pun-btn{
@@ -107,6 +109,7 @@ nav {
   justify-content: space-evenly;
   margin-top: 1em;
   color: black;
+  margin-bottom: 2em;
  
 }
 
@@ -132,6 +135,7 @@ nav {
   margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;
+  margin-bottom: 2em;
 }
 
 .pun-form {
@@ -155,10 +159,60 @@ form{
 
 .submit{
   color: black;
-
-  
+  background-color: white;
   border-radius: 25px;
   text-align: center;
   text-decoration: none;
   box-shadow: 0 6px #999;
+  font-size: xx-large;
+}
+
+.submit:hover {
+  background-color: #e0dfdf
+}
+
+.submit:active {
+  background-color: #e0dfdf;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.pun-fanatics {
+  background-color: white;
+  padding: 20px 50px 20px 30px;
+  text-align: center;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 9px #999;
+  margin-top: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+
+.fan {
+  background-color: white;
+  padding: 20px 50px 20px 30px;
+  text-align: left;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 9px #999;
+  margin-top: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 2em;
+
+}
+
+.bin{
+  font-size: xx-large;
+  color: #ffffff;
+  background-color: #020202;
+  padding: 50px 50px 50px 30px;;
+  margin-bottom: 50em;
+
+
 }
