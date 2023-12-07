@@ -38,6 +38,7 @@ const PunForm = ({ onNewFanSubmission }) => {
         setEmail("");
         setComment("");
         onNewFanSubmission(newFan);
+        console.log(newFan);
     }
 
     return (

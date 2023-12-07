@@ -1,11 +1,10 @@
-const Fan = ({fan}) => {
+const Fan = ({ fan }) => {
 
-    return(
+    return (
         <div>
             <p><b>Name:</b> {fan.name}</p>
             <p><b>Email:</b> {fan.email}</p>
             <p><b>Comment:</b> {fan.comment}</p>
-
         </div>
     )
 

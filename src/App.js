@@ -27,7 +27,7 @@ function App() {
     ]
   );
 
-  const handleNewFan = (newFan) => {
+  const handleNewFanSubmission = (newFan) => {
     const updatedFans = [...punFans, newFan];
     setPunFans(updatedFans);
   }
@@ -50,7 +50,7 @@ function App() {
               },
               {
                 path: "/comment-section",
-                element: <PunForm onNewFanSubmission={handleNewFan} />, 
+                element: <PunForm onNewFanSubmission={handleNewFanSubmission} />, 
               }, 
               {
                 path: "/comment-section",
