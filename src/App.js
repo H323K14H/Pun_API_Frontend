@@ -6,7 +6,7 @@ import PunForm from './components/PunForm';
 import PunContainer from './containers/PunContainer';
 import { useState } from 'react';
 
-function App() {
+function App({getRandomPun}) {
 
   const [pun, setPun] = useState([]);
   const [punFans, setPunFans] = useState(
@@ -25,6 +25,8 @@ function App() {
       }
     ]
   );
+
+  
 
   const handleNewFan = (newFan) => {
     const updatedFans = [...punFans, newFan];

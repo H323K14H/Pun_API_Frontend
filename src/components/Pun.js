@@ -1,13 +1,14 @@
 import React from 'react'
 
 
-const Pun = ({ pun }) => {
+const Pun = ({ pun, onButtonClick }) => {
 
     return (
         <>
-            <section className='pun'>
+            <p className='pun'>
                 <b>{pun.pun}</b>
-            </section>
+            </p>
+           
         </>
 
     )
