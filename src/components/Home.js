@@ -6,11 +6,11 @@ const Home = () => {
     <>
       <nav>
           <ul>
-              <li><Link to="/random-pun">Random Puns </Link> </li>
+              <Link to="/random-pun">Random Puns</Link> 
+              <Link to="/comment-section">Post comment:</Link> 
           </ul>
       </nav>
       <Outlet />
-
     </>
   )
 }
