@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Pun = ({ pun, onButtonClick }) => {
 
     return (
@@ -8,12 +7,11 @@ const Pun = ({ pun, onButtonClick }) => {
             <p className='pun'>
                 <b>{pun.pun}</b>
             </p>
-           <div>
+            <div>
                 <button className="main-btn" onClick={onButtonClick}>🙉🙈🙊</button>
-           </div>
+            </div>
         </>
-
-    )
+    );
 }
 
 export default Pun;

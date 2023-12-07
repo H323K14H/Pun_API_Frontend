@@ -6,8 +6,7 @@ const Fan = ({ fan }) => {
             <p><b>Email:</b> {fan.email}</p>
             <p><b>Comment:</b> {fan.comment}</p>
         </div>
-    )
-
+    );
 }
 
 export default Fan;

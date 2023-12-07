@@ -4,12 +4,11 @@ import Home from './components/Home';
 import Pun from './components/Pun';
 import PunForm from './components/PunForm';
 import PunContainer from './containers/PunContainer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import FanList from './components/FanList';
-import PunButton from './components/PunButton';
 import Welcome from './components/Welcome';
 
-function App({getRandomPun}) {
+function App() {
 
   const [pun, setPun] = useState([]);
   const [punFans, setPunFans] = useState(
@@ -29,29 +28,35 @@ function App({getRandomPun}) {
     ]
   );
 
+
+  // GET MAPPING
+  const getRandomPun = async () => {
+    const response = await fetch("https://www.punapi.rest/api/pun");
+    const data = await response.json();
+    setPun(data);
+  };
+
+  useEffect(() => {
+    getRandomPun();
+  }, []);
+
   const handleNewFanSubmission = (newFan) => {
     const updatedFans = [...punFans, newFan];
     setPunFans(updatedFans);
-  }
-
-  
-
-    
+  };
 
   const punRoutes = createBrowserRouter(
     [
       {
         path: "/",
         element: <>
-                <Home />
-                
-                </>,
+          <Home />
+
+        </>,
         children: [
           {
             path: "/",
             element: <Welcome />
-            
-
           },
           {
             path: "/",
@@ -60,8 +65,7 @@ function App({getRandomPun}) {
               {
                 path: "/random-pun",
                 element: <>
-                  <Pun  pun={pun} onButtonClick={getRandomPun} />
-                  {/* <PunButton   /> */}
+                  <Pun pun={pun} onButtonClick={getRandomPun} />
                 </>
               },
               {
