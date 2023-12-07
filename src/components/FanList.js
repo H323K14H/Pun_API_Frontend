@@ -1,8 +1,8 @@
 import Fan from "./Fan"
 
-const FanList = ({fans}) => {
+const FanList = ({punFans}) => {
 
-    const fanComponents = fans.map(fan => {
+    const fanComponents = punFans.map(fan => {
         return <Fan fan={fan} key={fan.id}/>
     })
 

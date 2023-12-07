@@ -40,9 +40,7 @@ function App() {
         children: [
           {
             path: "/",
-            element: <PunContainer
-              setPun={setPun}
-            />,
+            element: <PunContainer setPun={setPun} />,
             children: [
               {
                 path: "/random-pun",
@@ -50,24 +48,21 @@ function App() {
               },
               {
                 path: "/comment-section",
-                element: <PunForm onNewFanSubmission={handleNewFanSubmission} />, 
-              }, 
-              {
-                path: "/comment-section",
-                element: <FanList fans = {punFans}/>
+                element: <>
+                  <PunForm onNewFanSubmission={handleNewFanSubmission} />
+                  <FanList punFans={punFans} />
+                </>
               }
             ]
           }
         ]
       }
-
     ]
   );
 
   return (
     <div className="App">
       <RouterProvider router={punRoutes} />
-      
     </div>
   );
 }
