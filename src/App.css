@@ -129,5 +129,36 @@ nav {
   text-align: center;
   text-decoration: none;
   box-shadow: 0 9px #999;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
+.pun-form {
+  background-color: white;
+  padding: 20px 50px 20px 30px;
+  text-align: center;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 9px #999;
+  margin-top: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+
+form{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.submit{
+  color: black;
+
+  
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px #999;
+}
