@@ -4,6 +4,7 @@ import PunButton from "../components/PunButton";
 import PunForm from "../components/PunForm";
 import { createBrowserRouter, Outlet, RouterProvider, useNavigate } from "react-router-dom";
 import Home from "../components/Home";
+import FanList from "../components/FanList";
 
 
 const PunContainer = ({ setPun }) => {
@@ -29,6 +30,7 @@ const PunContainer = ({ setPun }) => {
             </h1>
             {/* CSS for spacing. Bottom marigin */}
             <PunButton onButtonClick={getRandomPun} />
+            {/* <FanList fans = {fans}/> */}
             <Outlet />
         </body>
 

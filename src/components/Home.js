@@ -6,7 +6,8 @@ const Home = () => {
     <>
       <nav>
           <ul>
-              <Link to="/random-pun">Random Puns</Link> 
+              <Link to="/">Home</Link>
+              {/* <Link to="/random-pun">Random Puns</Link>  */}
               <Link to="/comment-section">Post comment:</Link> 
           </ul>
       </nav>

@@ -5,8 +5,9 @@ import Pun from './components/Pun';
 import PunForm from './components/PunForm';
 import PunContainer from './containers/PunContainer';
 import { useState } from 'react';
+import FanList from './components/FanList';
 
-function App({getRandomPun}) {
+function App() {
 
   const [pun, setPun] = useState([]);
   const [punFans, setPunFans] = useState(
@@ -25,8 +26,6 @@ function App({getRandomPun}) {
       }
     ]
   );
-
-  
 
   const handleNewFan = (newFan) => {
     const updatedFans = [...punFans, newFan];
@@ -51,7 +50,11 @@ function App({getRandomPun}) {
               },
               {
                 path: "/comment-section",
-                element: <PunForm onNewFanSubmission={handleNewFan} />
+                element: <PunForm onNewFanSubmission={handleNewFan} />, 
+              }, 
+              {
+                path: "/comment-section",
+                element: <FanList fans = {punFans}/>
               }
             ]
           }
@@ -64,6 +67,7 @@ function App({getRandomPun}) {
   return (
     <div className="App">
       <RouterProvider router={punRoutes} />
+      
     </div>
   );
 }
